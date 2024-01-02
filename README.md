@@ -1,3 +1,5 @@
+I updated this library to account for spin drift, as well as vertical deflection as the result of wind. Further improvements will be made as necessary.
+
 GNU Ballistics Library
 ======================
 
