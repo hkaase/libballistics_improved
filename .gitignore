@@ -72,3 +72,5 @@ dkms.conf
 # Executables
 .idea/
 cmake-build-debug/
+build_wasm/cmake_install.cmake
+build_wasm/CMakeFiles/

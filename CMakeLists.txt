@@ -3,12 +3,14 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 project(ballistics C CXX)
 
 include_directories(include)
-add_subdirectory(test)
+# don't need the tests
+# add_subdirectory(test)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -finline-functions -O3")
 
 add_executable(example example.c)
+set_target_properties(example PROPERTIES SUFFIX ".html")
 target_link_libraries(example PRIVATE m ballistics)
 #install(TARGETS example DESTINATION bin)
 
